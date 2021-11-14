@@ -1,25 +1,77 @@
 *{
   box-sizing: border-box;
 }
-body{
+/* body{
   margin: 80px auto;
   width: 80%;
-  background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url(images/bg1.jpg);
+  background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url(images/ghana.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 12px;
   text-align: center;
   padding: 100px 0;
   color: white;
-}
-.description{
-  position: absolute;
-  top:0;
-}
-form{
+} */
+.home{
   width: 80%;
   margin: auto;
+}
+#akanbutn{
+position: relative;
+top:-90px;
+}
+.logo{
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+#navButton{
+ position: relative;
+ top:-50px; 
+ right: 40px ;
+}
+.logo p{
+ font-size: 36px;
+ font-family: 'Oleo Script Swash Caps', cursive;
+ position: relative;
+ left:50%;
+ top:-80px;
+}
+.info h2{
+font-family: 'Noto Serif', serif;
+color: #362D5A;
+font-style: normal;
+font-weight: bold;
+font-size: 80px;
+line-height: 77px;
+}
+.info p{
+font-family: 'Noto Serif', serif;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+}
+.row{
+  position: relative;
+  top:-90px;
+}
+.row img{
+  position: relative;
+  right:40px;
+  border-radius: 20px;
+}
+.form{
+  margin-top: 20px;
   border: 2px solid white;
-  border-radius: 10px;
-  padding: 20px;
+  background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.5)), url(images/ghana.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  text-align: center;
+  padding: 100px 400px;
+  color: white;
+}
+#formValues > button{
+  padding:10px 40px;
 }
