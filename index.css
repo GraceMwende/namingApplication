@@ -75,3 +75,9 @@ line-height: 30px;
 #formValues > button{
   padding:10px 40px;
 }
+#akanName{
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #c8bef0;
+  transition: 2s;
+}
