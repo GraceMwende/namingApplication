@@ -13,7 +13,13 @@
     // document.write("Your birthday date is:" +dateValue);
 
     let dayIndex = getDayIndex(dateValue);
-    getAkpanName(dayIndex, gender);
+    
+    // getAkpanName(dayIndex, gender);
+
+    //  append Akan Names
+    let akanNames = document.getElementById("akanName");
+    let akanNameFunction = getAkpanName(dayIndex, gender);
+    akanNames.append(akanNameFunction);
  }
 
  function getDayIndex(dateValue){
@@ -22,14 +28,16 @@
   return day;
  }
 
+
  function getAkpanName(dayIndex, gender){
   if (gender == "male"){
-      console.log(`You were born on ${days[dayIndex]}Akpan Name is ${maleNames[dayIndex]}`);
+       return `You were born on ${days[dayIndex]} Your Akpan Name is ${maleNames[dayIndex]}`;
   }
   else if (gender == "female"){
-     console.log(`You were born on ${days[dayIndex]}Akpan Name is ${femaleNames[dayIndex]}`)
+     return `You were born on ${days[dayIndex]}Akpan Name is ${femaleNames[dayIndex]}`;
   }
  }
+
 
 
 
