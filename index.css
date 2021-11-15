@@ -26,6 +26,11 @@ top:-90px;
  left:50%;
  top:-80px;
 }
+#culture-text{
+  text-align: center;
+  position: relative;
+  left: 10%;
+}
 .akanInfo h2{
 font-family: 'Noto Serif', serif;
 color: #362D5A;
