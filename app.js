@@ -5,6 +5,7 @@
  document.getElementById("formValues").addEventListener("submit", function(e){
    e.preventDefault();
    takevalue();
+   
  })
  function takevalue(){
     var gender = document.getElementById("gender").value;
@@ -20,6 +21,9 @@
     let akanNames = document.getElementById("akanName");
     let akanNameFunction = getAkpanName(dayIndex, gender);
     akanNames.append(akanNameFunction);
+    $( "button" ).click(function() {
+      $( "#akanName" ).empty();
+    });
  }
 
  function getDayIndex(dateValue){
