@@ -31,10 +31,10 @@
 
  function getAkpanName(dayIndex, gender){
   if (gender == "male"){
-       return `You were born on ${days[dayIndex]} Your Akpan Name is ${maleNames[dayIndex]}`;
+       return `You were born on ${days[dayIndex]} Your Akan Name is ${maleNames[dayIndex]}`;
   }
   else if (gender == "female"){
-     return `You were born on ${days[dayIndex]}Akpan Name is ${femaleNames[dayIndex]}`;
+     return `You were born on ${days[dayIndex]}Akan Name is ${femaleNames[dayIndex]}`;
   }
  }
 
