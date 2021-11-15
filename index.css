@@ -26,16 +26,15 @@ top:-90px;
  left:50%;
  top:-80px;
 }
-.info h2{
+.akanInfo h2{
 font-family: 'Noto Serif', serif;
 color: #362D5A;
 font-style: normal;
 font-weight: bold;
-font-size: 80px;
-line-height: 77px;
+font-size: 36px;
 }
-.info p{
-font-family: 'Noto Serif', serif;
+.akanInfo p{
+font-family: 'Cormorant', serif;
 font-style: normal;
 font-weight: normal;
 font-size: 20px;
