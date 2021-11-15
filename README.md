@@ -26,10 +26,6 @@ This a Akan Web application that comes from the Ghananian culture that gives nam
   git clone https://github.com/GraceMwende/myPortfolio.git
 - Run in your browser
 
-## Known Bugs
-
-font-families didn't pick
-
 ## Technologies Used
 
 - HTML
