@@ -84,3 +84,6 @@ a{
   color: white;
   text-decoration: none;
 }
+.text-center{
+  background-color: rgba(0, 0, 0, 0.2);
+}
