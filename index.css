@@ -74,5 +74,9 @@ line-height: 30px;
 }
 @keyframes example {
   from {color: red;}
-  to   {color: white;}
+  to   {color: blue;}
+}
+a{
+  color: white;
+  text-decoration: none;
 }
