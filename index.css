@@ -6,8 +6,8 @@
   margin: auto;
 }
 #akanbutn{
-position: relative;
-top:-60px;
+  position: relative;
+  top:-60px;
 }
 .logo{
   justify-content: space-between;
@@ -15,9 +15,9 @@ top:-60px;
   border: none;
 }
 #navButton{
- position: relative;
- top:-50px; 
- right: 40px ;
+  position: relative;
+  top:-50px; 
+  right: 40px ;
 }
 .logo p{
  font-size: 36px;
@@ -32,18 +32,18 @@ top:-60px;
   left: 10%;
 }
 .akanInfo h2{
-font-family: 'Noto Serif', serif;
-color: #362D5A;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
+  font-family: 'Noto Serif', serif;
+  color: #362D5A;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
 }
 .akanInfo p{
-font-family: 'Cormorant', serif;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 30px;
+  font-family: 'Cormorant', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
 }
 .row{
   position: relative;
