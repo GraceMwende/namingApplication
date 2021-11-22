@@ -1,48 +1,47 @@
  const days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
  const maleNames = ["kwasi", "kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "kwame"];
- const femaleNames = ["Akosua", "Adwoa","Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+ const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
- document.getElementById("formValues").addEventListener("submit", function(e){
+ document.getElementById("formValues").addEventListener("submit", function (e) {
    e.preventDefault();
    takevalue();
-   
+   $("#formValues")[0].reset();
  })
- function takevalue(){
-    var gender = document.getElementById("gender").value;
-    var dateValue = document.getElementById("date").value;
-    // document.write("Your gender is:" + gender);
-    // document.write("Your birthday date is:" +dateValue);
 
-    let dayIndex = getDayIndex(dateValue);
-    
-    // getAkpanName(dayIndex, gender);
+ function takevalue() {
+   var gender = document.getElementById("gender").value;
+   var dateValue = document.getElementById("date").value;
+   // document.write("Your gender is:" + gender);
+   // document.write("Your birthday date is:" +dateValue);
 
-    //  append Akan Names
-    let akanNames = document.getElementById("akanName");
-    let akanNameFunction = getAkpanName(dayIndex, gender);
-    akanNames.append(akanNameFunction);
-    $( "button" ).click(function() {
-      $( "#akanName" ).empty();
-    });
+   let dayIndex = getDayIndex(dateValue);
+
+   // getAkpanName(dayIndex, gender);
+
+   //  append Akan Names
+   let akanNames = document.getElementById("akanName");
+   let akanNameFunction = getAkpanName(dayIndex, gender);
+
+   if (gender.length !== 0 || dateValue.length !== 0) {
+     akanNames.append(akanNameFunction);
+   }
+
+   $("button").click(function () {
+     $("#akanName").empty();
+   });
  }
 
- function getDayIndex(dateValue){
-  var dateValueConverted = new Date (dateValue);
-  let day = dateValueConverted.getDay();
-  return day;
+ function getDayIndex(dateValue) {
+   var dateValueConverted = new Date(dateValue);
+   let day = dateValueConverted.getDay();
+   return day;
  }
 
 
- function getAkpanName(dayIndex, gender){
-  if (gender == "male"){
-       return `You were born on ${days[dayIndex]} \n Your Akan Name is ${maleNames[dayIndex]}`;
-  }
-  else if (gender == "female"){
+ function getAkpanName(dayIndex, gender) {
+   if (gender == "male") {
+     return `You were born on ${days[dayIndex]} \n Your Akan Name is ${maleNames[dayIndex]}`;
+   } else if (gender == "female") {
      return `You were born on ${days[dayIndex]} \n Your Akan Name is ${femaleNames[dayIndex]}`;
-  }
+   }
  }
-
-
-
-
-
