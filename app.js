@@ -5,7 +5,6 @@
  document.getElementById("formValues").addEventListener("submit", function (e) {
    e.preventDefault();
    takevalue();
-   $("#formValues")[0].reset();
  })
 
  function takevalue() {
@@ -21,14 +20,19 @@
    //  append Akan Names
    let akanNames = document.getElementById("akanName");
    let akanNameFunction = getAkpanName(dayIndex, gender);
-
-   if (gender.length !== 0 || dateValue.length !== 0) {
+   //  akanNames.append(akanNameFunction);
+   if (!gender || !dateValue) {
+     alert("fill all the values");
+     $("#formValues")[0].reset();
+     return false;
+   } else {
      akanNames.append(akanNameFunction);
+     $("#formValues")[0].reset();
+     $("button").click(function () {
+       $("#akanName").empty();
+     });
+     return true;
    }
-
-   $("button").click(function () {
-     $("#akanName").empty();
-   });
  }
 
  function getDayIndex(dateValue) {
